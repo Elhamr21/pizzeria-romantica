@@ -91,7 +91,7 @@ export function Navbar() {
                 {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </Button>
               <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
-                <Link href="#contact">Reservieren</Link>
+                <Link href="#contact">Kontakt</Link>
               </Button>
             </div>
 

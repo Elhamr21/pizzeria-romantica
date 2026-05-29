@@ -81,14 +81,12 @@ export function ContactSection() {
                   <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Website</h4>
+                  <h4 className="font-semibold text-foreground">Email</h4>
                   <a
-                    href="https://pizza-romantica-hagen.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="mailto:bejta1979@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    pizza-romantica-hagen.de
+                    bejta1979@gmail.com
                   </a>
                 </div>
               </div>
