@@ -1,0 +1,164 @@
+import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
+
+export const metadata = {
+  title: 'Impressum | Pizzeria Romantica',
+  description: 'Impressum und rechtliche Informationen der Pizzeria Romantica in Hagen.',
+}
+
+export default function ImpressumPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      {/* Header */}
+      <div className="bg-card border-b border-border">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-8">
+          <Link 
+            href="/" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-6"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Zurück zur Startseite
+          </Link>
+          <h1 className="text-4xl font-bold text-foreground font-[var(--font-playfair)]">
+            Impressum
+          </h1>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="prose prose-neutral dark:prose-invert max-w-none space-y-8">
+          
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Angaben gemäß § 5 TMG</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-foreground font-medium text-lg mb-2">Pizzeria Romantica</p>
+              <p className="text-muted-foreground">
+                Voerder Str. 10<br />
+                58135 Hagen<br />
+                Deutschland
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Kontakt</h2>
+            <div className="bg-card rounded-lg p-6 border border-border space-y-2">
+              <p className="text-muted-foreground">
+                <span className="font-medium text-foreground">Telefon:</span> +49 2331 1276622
+              </p>
+              <p className="text-muted-foreground">
+                <span className="font-medium text-foreground">E-Mail:</span> info@pizza-romantica-hagen.de
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Umsatzsteuer-ID</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
+                <span className="font-medium text-foreground">DE XXX XXX XXX</span>
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Pizzeria Romantica<br />
+                Voerder Str. 10<br />
+                58135 Hagen
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">EU-Streitschlichtung</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+                <a 
+                  href="https://ec.europa.eu/consumers/odr/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  https://ec.europa.eu/consumers/odr/
+                </a>
+              </p>
+              <p className="text-muted-foreground mt-4">
+                Unsere E-Mail-Adresse finden Sie oben im Impressum.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
+                Verbraucherschlichtungsstelle teilzunehmen.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Haftung für Inhalte</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den 
+                allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht 
+                verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen 
+                zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+              </p>
+              <p className="text-muted-foreground mt-4">
+                Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen 
+                Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt 
+                der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden 
+                Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Haftung für Links</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
+                Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der 
+                verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+              </p>
+              <p className="text-muted-foreground mt-4">
+                Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. 
+                Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche 
+                Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht 
+                zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold text-foreground mb-4">Urheberrecht</h2>
+            <div className="bg-card rounded-lg p-6 border border-border">
+              <p className="text-muted-foreground">
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
+                Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
+                Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+              </p>
+              <p className="text-muted-foreground mt-4">
+                Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. 
+                Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte 
+                Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem 
+                auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei 
+                Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+              </p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  )
+}

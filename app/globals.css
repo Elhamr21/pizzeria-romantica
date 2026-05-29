@@ -1,0 +1,123 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #FAF6F0;
+  --foreground: #1C1917;
+  --card: #FFFDF9;
+  --card-foreground: #1C1917;
+  --popover: #FFFDF9;
+  --popover-foreground: #1C1917;
+  --primary: #B91C1C;
+  --primary-foreground: #FFFDF9;
+  --secondary: #4D7C59;
+  --secondary-foreground: #FFFDF9;
+  --muted: #F5F0E8;
+  --muted-foreground: #78716C;
+  --accent: #D4A017;
+  --accent-foreground: #1C1917;
+  --destructive: #B91C1C;
+  --destructive-foreground: #FFFDF9;
+  --border: #E7E0D6;
+  --input: #E7E0D6;
+  --ring: #B91C1C;
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: #1A1512;
+  --foreground: #FAF6F0;
+  --card: #231E1A;
+  --card-foreground: #FAF6F0;
+  --popover: #231E1A;
+  --popover-foreground: #FAF6F0;
+  --primary: #DC2626;
+  --primary-foreground: #FAF6F0;
+  --secondary: #5A9168;
+  --secondary-foreground: #FAF6F0;
+  --muted: #2D2520;
+  --muted-foreground: #A8A29E;
+  --accent: #E5B020;
+  --accent-foreground: #1A1512;
+  --destructive: #DC2626;
+  --destructive-foreground: #FAF6F0;
+  --border: #3D352E;
+  --input: #3D352E;
+  --ring: #DC2626;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
