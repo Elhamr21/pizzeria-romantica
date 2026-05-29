@@ -93,7 +93,7 @@ export function MobileNav() {
             className="fixed bottom-20 right-4 z-50 lg:hidden"
           >
             <Link
-              href="https://pizza-romantica-hagen.de"
+              href="https://youtaste.com/speisekarte/pizzeria-romantica-haspe"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-full shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-105 transition-all"

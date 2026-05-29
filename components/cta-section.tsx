@@ -61,7 +61,7 @@ export function CTASection() {
               size="lg"
               className="w-full sm:w-auto text-lg px-8 py-6 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/40 hover:scale-105"
             >
-              <Link href="https://pizza-romantica-hagen.de" target="_blank" rel="noopener noreferrer">
+              <Link href="https://youtaste.com/speisekarte/pizzeria-romantica-haspe" target="_blank" rel="noopener noreferrer">
                 Online bestellen
               </Link>
             </Button>
