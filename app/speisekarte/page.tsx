@@ -29,7 +29,7 @@ const menuData = {
     { name: 'Spaghetti', desc: 'Spaghetti, Bolognesesauce', prices: ['8,60', '11,60', '13,90'] },
     { name: 'Romana', desc: 'Schinken, Salami, Champignons', prices: ['8,60', '11,60', '13,90'] },
     { name: 'O Sole Mio', desc: 'Schinken, Champignons, Spargel, Spiegelei', prices: ['8,60', '11,60', '13,90'] },
-    { name: 'Capricciosa', desc: 'Champignons, Mais, Artischocken, gek. Ei', prices: ['8,80', '11,60', '13,90'] },
+    { name: 'Capriciosa', desc: 'Champignons, Mais, Artischocken, gek. Ei', prices: ['8,80', '11,60', '13,90'] },
     { name: 'Quattro Stagioni', desc: 'Schinken, Salami, Champignons, Thunfisch', prices: ['8,60', '11,60', '13,90'] },
     { name: 'Celina', desc: 'Spinat, Gorgonzola, Knoblauch, Käse', prices: ['9,40', '11,90', '13,90'] },
     { name: 'Calzone I', desc: 'gefüllt mit Schinken, Salami, Champignons', prices: ['8,60', '11,90', '13,90'] },
@@ -42,146 +42,173 @@ const menuData = {
     { name: 'Venezia', desc: 'Broccoli, Hähnchenbrust, Sauce Hollandaise', prices: ['10,90', '12,90', '14,90'] },
     { name: 'Gorgonzola', desc: 'Gorgonzola', prices: ['8,90', '11,60', '13,90'] },
     { name: 'Mozzarella', desc: 'frische Tomatenscheiben, Mozzarella, Basilikum', prices: ['8,90', '11,60', '13,90'], vegetarian: true },
-    { name: 'de Parma', desc: 'frische Tomatenscheiben, Mozz., Parmaschinken, Basilikum', prices: ['10,90', '12,90', '14,90'] },
-    { name: 'Quattro Formaggi', desc: '4 verschiedene Käsesorten', prices: ['8,90', '11,90', '13,90'], vegetarian: true },
+    { name: 'de Parma', desc: 'frische Tomatenscheiben, Mozz., Parmaschinken, Basilikum', prices: ['10,60', '12,60', '13,60'] },
+    { name: 'Quattro Formaggi', desc: '4 verschiedene Käsesorten', prices: ['8,90', '11,60', '13,90'], vegetarian: true },
     { name: 'Spinaci', desc: 'Spinat, Knoblauch', prices: ['7,90', '9,90', '11,90'], vegetarian: true },
     { name: 'Broccoli', desc: 'Broccoli, Knoblauch', prices: ['7,90', '9,90', '11,90'], vegetarian: true },
-    { name: 'Vegetaria', desc: 'Spinat, Broccoli, Paprika, Champignons, Knoblauch', prices: ['9,40', '11,90', '13,90'], vegetarian: true },
-    { name: 'Gamberetti', desc: 'Krabben, Knoblauch', prices: ['9,90', '11,90', '13,90'] },
-    { name: 'Frutti di Mare', desc: 'Meeresfrüchte, Knoblauch', prices: ['9,90', '11,90', '13,90'] },
-    { name: 'Rucola e Salmone', desc: 'Cherrytomaten, Lachs, Zwiebeln, Rucola', prices: ['10,90', '12,90', '14,90'] },
-    { name: 'Chili con Carne', desc: 'Bolognese, Zwiebeln, Kidneybohnen', prices: ['8,90', '10,90', '12,90'], spicy: true },
-    { name: 'Tacchino', desc: 'Putenfleisch, Champignons, Zwiebeln', prices: ['9,90', '11,90', '13,90'] },
-    { name: 'Speciale', desc: 'Krabben, Spinat, Knoblauch, Sahnesauce', prices: ['10,90', '13,60', '14,90'] },
-    { name: 'Romantica', desc: 'nach Art des Hauses', prices: ['10,90', '12,90', '14,90'], popular: true },
+    { name: 'Vegetaria', desc: 'Spinat, Broccoli, Paprika, Champignons, Knoblauch', prices: ['9,40', '10,90', '13,90'], vegetarian: true },
+    { name: 'Gamberetti', desc: 'Krabben, Knoblauch', prices: ['9,60', '11,90', '13,90'] },
+    { name: 'Frutti di Mare', desc: 'Meeresfrüchte, Knoblauch', prices: ['9,60', '11,90', '13,90'] },
+    { name: 'Rucola e Salmone', desc: 'Lachs, Cherrytomaten, Zwiebeln, Rucola', prices: ['10,90', '12,90', '15,90'] },
+    { name: 'Chili con Carne', desc: 'Bolognese, Zwiebeln, Kidneybohnen', prices: ['8,60', '10,90', '13,90'], spicy: true },
+    { name: 'Tacchino', desc: 'Hähnchenfleisch, Champignons, Zwiebeln', prices: ['9,60', '11,90', '13,90'] },
+    { name: 'Speciale', desc: 'Krabben, Spinat, Knoblauch, Sahnesauce', prices: ['10,60', '13,90', '14,90'] },
+    { name: 'Romantica', desc: 'nach Art des Hauses', prices: ['10,60', '13,90', '14,90'], popular: true },
+  ],
+  salate: [
+    { name: 'Verde', desc: 'Grüner Salat', prices: ['4,40', '5,90'], vegetarian: true },
+    { name: 'Rucola', desc: 'Rucola, Cherrytomaten, Rindfleischstreifen, Parmesan', prices: ['9,90', '12,90'] },
+    { name: 'Salmone', desc: 'Rucola, Lachs, Cherrytomaten, Parmesan', prices: ['9,90', '12,90'] },
+    { name: 'Pomodore', desc: 'Tomatensalat mit Oregano', prices: ['6,40', '8,60'], vegetarian: true },
+    { name: 'Cetrioli', desc: 'Gurkensalat mit Oregano', prices: ['5,90', '8,20'], vegetarian: true },
+    { name: 'Toscana', desc: 'Gemischter Salat mit paniertem Schafskäse', prices: ['8,90', '10,90'], vegetarian: true },
+    { name: 'Pecoraio', desc: 'Blattsalat, Tomaten, Gurken, Schafskäse', prices: ['7,90', '9,90'], vegetarian: true },
+    { name: 'Caprese', desc: 'Blattsalat, Tomaten, Mozzarella, Basilikum', prices: ['7,90', '9,90'], vegetarian: true },
+    { name: 'Bel Paese', desc: 'Blattsalat, Tomaten, Gurken, Thunfisch, rote Zwiebeln, Ei', prices: ['7,90', '9,90'] },
+    { name: 'Mista', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, rote Zwiebeln', prices: ['5,90', '8,90'], vegetarian: true },
+    { name: 'Frutti di Mare', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, Thunfisch, Meeresfrüchte', prices: ['7,90', '9,90'] },
+    { name: 'Italiana', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, Thunfisch, Schinken, Käse, Artischocken, Ei', prices: ['8,90', '10,90'] },
+    { name: 'Dello Chef', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, Hähnchenbrust, Ei', prices: ['8,90', '11,60'] },
+    { name: 'Romantica', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, Thunfisch, Schinken, Artischocken, Ei, Krabben, Oliven, Kapern, Käse', prices: ['8,90', '11,60'], popular: true },
+    { name: 'Funghi', desc: 'Blattsalat, Tomaten, Gurken, Mais, Paprika, Kidneybohnen, gebratene Champignons', prices: ['7,90', '10,60'], vegetarian: true },
+    { name: 'Hawaii', desc: 'Grüner Salat, Tomaten, Gurken, Mais, Schinken, Ananas', prices: ['7,90', '9,90'] },
+    { name: 'Gambas', desc: 'Rucolasalat, Gambas, Cherrytomaten, Parmesan', prices: ['10,30', '13,90'] },
   ],
   pasta: [
     { name: 'Spaghetti Napoli', desc: 'Tomatensauce', price: '8,90', vegetarian: true },
-    { name: 'Spaghetti Bolognese', desc: 'Tomaten-Fleischsauce', price: '10,40', popular: true },
-    { name: 'Spaghetti Carbonara', desc: 'Schinken, Ei, Sahnesauce', price: '11,90' },
-    { name: 'Spaghetti Arrabiata', desc: 'Paprika, Oliven, Peperoni, Knoblauch, Tomatensauce', price: '11,60', spicy: true },
-    { name: 'Spaghetti al Gusto Vivo', desc: 'Thunfisch, Zwiebeln, Champignons, Tomatensauce', price: '11,60' },
-    { name: 'Spaghetti La Crema', desc: 'Steinpilze, Cherrytomaten, Rindfleischstreifen, Spezialsauce', price: '13,90' },
-    { name: 'Spaghetti con Scampi', desc: 'Scampi, Oliven, Cherrytomatensauce', price: '14,90' },
-    { name: 'Spaghetti Frutti di Mare', desc: 'Meeresfrüchte, Knoblauch, Tomatensauce', price: '12,90' },
-    { name: 'Spaghetti Aglio e Olio', desc: 'Oliven, frische Tomate, Peperoni, Knoblauch, Olivenöl', price: '10,90', spicy: true },
-    { name: 'Spaghetti Casalinghi', desc: 'Broccoli, Spinat, Schinken, Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Spaghetti Romantica', desc: 'Krabben, Muscheln, Champignons, Sahnesauce', price: '14,60', popular: true },
-    { name: 'Spaghetti al Verdure', desc: 'Gemüse, Putenbrust, Olivenöl', price: '12,60' },
-    { name: 'Penne Bolognese', desc: 'Tomaten-Fleischsauce', price: '10,40' },
-    { name: 'Penne dello Chef', desc: 'Champignons, frische Paprika, Putenbrust, Tomaten-Sahnesauce', price: '12,90' },
-    { name: 'Penne Gorgonzola', desc: 'Gorgonzola, Sahnesauce', price: '11,40' },
-    { name: 'Penne Quattro Formaggi', desc: '4 verschiedene Käsesorten, Sahnesauce', price: '11,60' },
+    { name: 'Spaghetti Bolognese', desc: 'Tomaten-Fleischsauce', price: '9,90', popular: true },
+    { name: 'Spaghetti Carbonara', desc: 'Schinken, Ei, Sahnesauce', price: '10,90' },
+    { name: 'Spaghetti Arrabbiata', desc: 'scharf, Paprika, Oliven, Knoblauch in Tomatensauce', price: '10,90', spicy: true },
+    { name: 'Spaghetti al Gusto Vino', desc: 'Thunfisch, Zwiebeln, Champignons in Tomatensauce', price: '11,90' },
+    { name: 'Spaghetti con Scampi', desc: 'Scampi, Oliven in Cherry-Tomatensauce', price: '13,90' },
+    { name: 'Spaghetti La Crema', desc: 'Steinpilze, Cherrytomaten, Rinderstreifen in Spezialsauce', price: '13,90' },
+    { name: 'Spaghetti Frutti di Mare', desc: 'Meeresfrüchte, Knoblauch in Tomatensauce', price: '12,60' },
+    { name: 'Spaghetti Aglio e Olio', desc: 'Oliven, frische Tomaten, Peperoni, Knoblauch in Olivenöl', price: '9,90', spicy: true },
+    { name: 'Spaghetti Casalinghi', desc: 'Broccoli, Spinat, Schinken, Sahnesauce mit Käse überbacken', price: '11,60' },
+    { name: 'Spaghetti Romantica', desc: 'Krabben, Muscheln, Champignons in Sahnesauce', price: '12,90', popular: true },
+    { name: 'Spaghetti al Verdure', desc: 'Gemüse, Hähnchenbrust und Olivenöl', price: '12,90' },
+    { name: 'Penne Bolognese', desc: 'Tomaten-Fleischsauce', price: '9,90' },
+    { name: 'Penne Dello Chef', desc: 'Champignons, frische Paprika, Hähnchenbrust, Tomaten-Sahnesauce', price: '12,90' },
+    { name: 'Penne Gorgonzola', desc: 'Gorgonzola und Sahnesauce', price: '11,40' },
+    { name: 'Penne Quattro Formaggi', desc: '4 verschiedene Käsesorten in Sahnesauce', price: '11,40' },
     { name: 'Penne Boscaiola', desc: 'Schinken, Champignons, Sahnesauce', price: '11,40' },
-    { name: 'Penne Mozzarella', desc: 'Mozzarella, Zwiebeln, Basilikum, Tomatensauce', price: '11,60' },
-    { name: 'Penne al Forno', desc: 'Schinken, gekochtes Ei, Erbsen, Fleisch-Sahnesauce, überbacken', price: '11,60' },
-    { name: 'Penne alla Trattoria', desc: 'Schinken, Broccoli, Gorgonzola, Sahnesauce', price: '11,90' },
-    { name: 'Penne Romantica', desc: 'Schinken, Broccoli, Spinat, Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Penne al Verdure', desc: 'frisches Gemüse, Tomatensauce, überbacken', price: '11,60', vegetarian: true },
-    { name: 'Tortellini alla Panna', desc: 'Schinken, Sahnesauce', price: '11,60' },
-    { name: 'Tortellini Spinaci e Gorgonzola', desc: 'Spinat, Gorgonzola, Sahnesauce', price: '11,90' },
-    { name: 'Tortellini Casalinghi', desc: 'Schinken, Broccoli, Spinat, Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Tortellini Quattro Formaggi', desc: '4 verschiedene Käsesorten, Sahnesauce', price: '11,90' },
-    { name: 'Tortellini al Forno', desc: 'Schinken, gekochtes Ei, Fleisch-Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Tortellini con Tonno', desc: 'Schinken, Thunfisch, Champignons, Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Tagliatelle al Pesto', desc: 'Basilikum, Parmesan, Knoblauch, Sahnesauce', price: '11,60' },
-    { name: 'Tagliatelle Montanara', desc: 'Schinken, Champignons, Erbsen, gekochtes Ei, Fleischsauce, überbacken', price: '11,60' },
-    { name: 'Tagliatelle al Salmone', desc: 'Lachs, Sahnesauce', price: '14,90' },
+    { name: 'Penne Mozzarella', desc: 'Mozzarella, Zwiebeln, Basilikum, Tomatensauce', price: '11,40' },
+    { name: 'Penne al Forno', desc: 'Schinken, gekochtes Ei, Erbsen, Fleisch-Sahnesauce, überbacken', price: '11,40' },
+    { name: 'Penne alla Trattoria', desc: 'Schinken, Broccoli, Gorgonzola in Sahnesauce', price: '11,40' },
+    { name: 'Penne Romantica', desc: 'Schinken, Broccoli, Spinat, Sahnesauce, überbacken', price: '11,40' },
+    { name: 'Penne al Verdure', desc: 'verschiedenes frisches Gemüse, Tomatensauce, Käse überbacken', price: '11,40', vegetarian: true },
+    { name: 'Penne alla Panna', desc: 'Schinken in Sahnesauce', price: '10,90' },
+    { name: 'Tortellini Spinaci e Gorgonzola', desc: 'Spinat, Gorgonzola in Sahnesauce', price: '11,60' },
+    { name: 'Tortellini Consalinghi', desc: 'Schinken, Broccoli, Spinat, Sahnesauce, Käse überbacken', price: '11,60' },
+    { name: 'Tortellini Quattro Formaggi', desc: '4 verschiedene Käsesorten in Sahnesauce', price: '11,60' },
+    { name: 'Tortellini al Forno', desc: 'Schinken, gekochtes Ei, Fleisch-Sahnesauce, Käse überbacken', price: '11,60' },
+    { name: 'Tortellini con Tonno', desc: 'Schinken, Thunfisch, Champignons, Sahnesauce, überbacken', price: '11,60' },
+    { name: 'Tagliatelle al Pesto', desc: 'Basilikum, Parmesan, Knoblauch in Sahnesauce', price: '11,40' },
+    { name: 'Tagliatelle Montanara', desc: 'Schinken, Champignons, Erbsen, gekochtes Ei, Fleischsauce, überbacken', price: '11,90' },
+    { name: 'Tagliatelle al Salmone', desc: 'Lachs in Sahnesauce', price: '14,60' },
     { name: 'Tagliatelle al Gusto Mio', desc: 'Krabben, Paprika, Champignons, Knoblauch, Sahnesauce', price: '13,60' },
     { name: 'Tagliatelle Leonardo', desc: 'Schinken, Broccoli, Spinat, Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Tagliatelle dello Chef', desc: 'Putenfleisch, Champignons, Knoblauch, Sahnesauce', price: '12,60' },
-    { name: 'Tagliatelle Regine', desc: 'Cherrytomaten, Pfifferlinge, Speck, Lauchzwiebeln', price: '12,60' },
-    { name: 'Tagliatelle al Verdure', desc: 'Gemüse, Putenbrust, Olivenöl', price: '12,90' },
-    { name: 'Gnocchi Romantica', desc: 'Mozzarella, Basilikum, Tomatensauce', price: '11,60' },
-    { name: 'Gnocchi al Gorgonzola', desc: 'Gorgonzola, Sahnesauce', price: '11,60' },
-    { name: 'Gnocchi alla Campagna', desc: 'Schinken, Champignons, Aubergine, Tomatensauce', price: '11,90' },
-    { name: 'Gnocchi Gratinati', desc: 'Schinken, gekochtes Ei, Fleisch-Sahnesauce, überbacken', price: '11,90' },
-    { name: 'Gnocchi La Crema', desc: 'Steinpilze, Cherrytomaten, Spezialsauce', price: '12,60' },
-    { name: 'Lasagne', desc: 'mit gekochtem Ei und Fleisch-Sahnesauce, überbacken', price: '11,40', popular: true },
-    { name: 'Cannelloni', desc: 'mit Hackfleischfüllung und Fleisch-Sahnesauce, überbacken', price: '11,60' },
-    { name: 'Tris di Pasta I', desc: 'Lasagne, Tortellini, Maccheroni mit Fleischsauce, überbacken', price: '11,90' },
-    { name: 'Tris di Pasta II', desc: 'Lasagne, Cannelloni, Tagliatelle mit Fleischsauce, überbacken', price: '11,90' },
-    { name: 'Cannelloni Spinat', desc: 'mit Spinat, Tomaten und Käse, überbacken', price: '11,60', vegetarian: true },
+    { name: 'Tagliatelle Dello Chef', desc: 'Putenfleisch, Champignons, Knoblauch in Sahnesauce', price: '12,90' },
+    { name: 'Tagliatelle Regine', desc: 'Cherrytomaten, Pfifferlinge, Parmaschinken, Lauchzwiebeln', price: '12,90' },
+    { name: 'Tagliatelle al Verdure', desc: 'Gemüse, Putenbrust und Olivenöl', price: '12,90' },
+    { name: 'Gnocchi Romantica', desc: 'Mozzarella und Basilikum, in Tomatensauce', price: '11,40' },
+    { name: 'Gnocchi al Gorgonzola', desc: 'Gorgonzola in Sahnesauce', price: '11,40' },
+    { name: 'Gnocchi alla Campagna', desc: 'Schinken, Champignons, Auberginen in Tomatensauce', price: '11,40' },
+    { name: 'Gnocchi Grantinate', desc: 'Schinken, gekochtes Ei, Fleisch-Sahnesauce, Käse überbacken', price: '11,40' },
+    { name: 'Gnocchi La Crema', desc: 'Steinpilze, Cherrytomaten, Spezialsauce', price: '11,40' },
+    { name: 'Lasagne', desc: 'Fleisch-Sahnesauce, Käse überbacken', price: '10,60', popular: true },
+    { name: 'Cannelloni', desc: 'Hackfleischfüllung, Fleisch-Sahnesauce, Käse überbacken', price: '10,90' },
+    { name: 'Tris di Pasta I', desc: 'Lasagne, Penne, Tortellini mit Fleischsauce, Käse überbacken', price: '10,90' },
+    { name: 'Tris di Pasta II', desc: 'Lasagne, Cannelloni, Tagliatelle, Fleischsauce, Käse überbacken', price: '10,90' },
+    { name: 'Cannelloni Ricotta', desc: 'mit Spinat in Tomatensauce, Käse überbacken', price: '10,90', vegetarian: true },
   ],
   fleisch: [
-    { name: 'Zigeunerschnitzel', desc: 'mit Zigeunersauce, Pommes Frites und Salat', price: '15,90' },
-    { name: 'Jägerschnitzel', desc: 'mit Jägersauce, Pommes Frites und Salat', price: '15,90' },
-    { name: 'Schnitzel Béarnaise', desc: 'mit Sauce Béarnaise, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Schnitzel Hollandaise', desc: 'mit Sauce Hollandaise, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Rahmschnitzel', desc: 'mit Champignon-Rahmsauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Schnitzel des Hauses', desc: 'mit Pfeffersauce, Pommes Frites und Salat', price: '15,90' },
-    { name: 'Schnitzel Hawaii', desc: 'mit Schinken, Ananas und Sauce Hollandaise, überbacken', price: '15,90' },
-    { name: 'Pfeffer-Hähnchenschnitzel', desc: 'mit Pfeffersauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Hähnchenschnitzel des Hauses', desc: 'mit Schafskäse und Sauce Hollandaise, überbacken', price: '15,90' },
-    { name: 'Hähnchenschnitzel Funghi', desc: 'mit Champignon-Rahmsauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Gyros-Teller', desc: 'Gyros mit Zwiebeln und Tzatziki, Pommes Frites und Salat', price: '15,90' },
-    { name: 'Gyros Béarnaise', desc: 'Gyros mit Sauce Béarnaise, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Gyros Hollandaise', desc: 'Gyros mit Sauce Hollandaise, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Gyros Funghi', desc: 'Gyros mit Champignons und Sahnesauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Gyros des Hauses', desc: 'Gyros mit Pfeffersauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Gyros Metaxa', desc: 'Gyros mit Metaxasauce, Pommes Frites und Salat, überbacken', price: '15,90' },
-    { name: 'Argentinisches Steak', desc: 'Argentinisches Rindersteak vom Grill mit Kräuterbutter', price: '26,90', popular: true },
-    { name: 'Bistecca Zingara', desc: 'Rumpsteak mit Pilzen, Zwiebeln, Paprika und Gurken', price: '26,90' },
-    { name: 'Bistecca alla Funghi', desc: 'Rumpsteak mit Champignons und Sahnesauce', price: '26,90' },
-    { name: 'Bistecca Pizzaiola', desc: 'Rumpsteak mit Knoblauch und Tomatensauce', price: '26,90' },
-    { name: 'Steak Diavolo', desc: 'mit Krabben und gemischten Pilzen, pikant und scharf', price: '26,90', spicy: true },
-    { name: 'Pollo alla Milanese', desc: 'Paniertes Hähnchenbrustfilet, Pommes Frites und Salat', price: '14,90' },
-    { name: 'Pollo al Vino Bianco', desc: 'Hähnchenbrustfilet mit Knoblauch-Weißweinsauce', price: '15,90' },
-    { name: 'Pollo Hawaii', desc: 'Hähnchenbrustfilet mit Ananas und Ingwer-Sahnesauce', price: '15,90' },
-    { name: 'Pollo Pepe', desc: 'Hähnchenbrustfilet vom Grill mit Pfeffersauce', price: '17,90' },
-    { name: 'Scaloppina Gorgonzola', desc: 'Schweinemedaillons mit Champignons und Gorgonzola-Sahnesauce', price: '18,90' },
-    { name: 'Scaloppina al Vino Bianco', desc: 'Schweinemedaillons mit Knoblauch-Weißweinsauce', price: '18,90' },
-    { name: 'Scaloppina alla Funghi', desc: 'Schweinemedaillons mit Champignons und Sahnesauce', price: '18,90' },
-    { name: 'Scaloppina Caprese', desc: 'Schweinemedaillons mit Tomatenscheiben und Mozzarella, überbacken', price: '19,90' },
+    { name: 'Zigeunerschnitzel', desc: 'Schweineschnitzel', price: '13,90' },
+    { name: 'Jägerschnitzel', desc: 'Schweineschnitzel', price: '13,90' },
+    { name: 'Schnitzel Béarnaise', desc: 'Sauce Béarnaise, Käse überbacken', price: '13,90' },
+    { name: 'Schnitzel Hollandaise', desc: 'Sauce Hollandaise, Käse überbacken', price: '13,90' },
+    { name: 'Rahmschnitzel', desc: 'Champignon-Rahmsauce', price: '13,90' },
+    { name: 'Schnitzel des Hauses', desc: 'mit Pfeffersauce', price: '13,90' },
+    { name: 'Schnitzel Hawaii', desc: 'Schinken, Ananas, Sauce Hollandaise, Käse überbacken', price: '13,90' },
+    { name: 'Pfeffer-Hähnchenschnitzel', desc: 'Pfeffersauce, Käse überbacken', price: '13,90' },
+    { name: 'Hähnchenschnitzel des Hauses', desc: 'Schafskäse, Sauce Hollandaise, Käse überbacken', price: '13,90' },
+    { name: 'Hähnchenschnitzel Funghi', desc: 'Champignon-Rahmsauce, Käse überbacken', price: '13,90' },
+    { name: 'Pollo alla Milanese', desc: 'Paniertes Hähnchenbrustfilet', price: '11,90' },
+    { name: 'Pollo al Vino Bianco', desc: 'Hähnchenbrustfilet in Knoblauch-Weißweinsauce', price: '14,90' },
+    { name: 'Pollo Hawaii', desc: 'Hähnchenbrustfilet in rassiger Ingwer-Sahnesauce, Ananas', price: '15,90' },
+    { name: 'Pollo Pepe', desc: 'Hähnchenbrustfilet in Pfeffersauce', price: '15,90' },
+    { name: 'Scaloppina Gorgonzola', desc: 'Schweinemedaillons in Gorgonzola-Sahnesauce', price: '15,90' },
+    { name: 'Scaloppina al Vino Bianco', desc: 'Schweinemedaillons in Knoblauch-Weißweinsauce', price: '15,90' },
+    { name: 'Scaloppina alla Funghi', desc: 'Schweinemedaillons, Champignons in Sahnesauce', price: '15,90' },
+    { name: 'Scaloppina Caprese', desc: 'Schweinemedaillons, Tomatenscheiben, Mozzarella überbacken', price: '17,90' },
+    { name: 'Argentinisches Steak', desc: 'gegr. Argentinisches Rumpsteak mit Kräuterbutter', price: '23,90', popular: true },
+    { name: 'Bistecca Zingara', desc: 'Rumpsteak, Pilze, Zwiebeln, Paprika, Gurken', price: '23,90' },
+    { name: 'Bistecca alla Funghi', desc: 'gegr. Argentinisches Rumpsteak, Champignons in Sahnesauce', price: '23,90' },
+    { name: 'Bistecca Pizzaiola', desc: 'gegr. Argentinisches Rumpsteak, Knoblauch, in Tomatensauce', price: '23,90' },
+    { name: 'Steak Diavolo', desc: 'mit Krabben, Mischpilzen (pikant, scharf)', price: '24,90', spicy: true },
+  ],
+  gyros: [
+    { name: 'Gyros-Teller', desc: 'mit Gyros, Zwiebeln, Tzatziki', price: '14,10' },
+    { name: 'Gyros Bernaise', desc: 'Gyros mit Sauce Bernaise, Käse überbacken', price: '14,60' },
+    { name: 'Gyros Hollandaise', desc: 'Gyros mit Sauce Hollandaise, Käse überbacken', price: '14,60' },
+    { name: 'Gyros Funghi', desc: 'Gyros mit Champignons, Sahnesauce, Käse überbacken', price: '14,60' },
+    { name: 'Gyros des Hauses', desc: 'Gyros, Pfeffersauce, Käse überbacken', price: '14,60' },
+    { name: 'Gyros Metaxa', desc: 'Gyros, Metaxasauce, Käse überbacken', price: '14,60' },
   ],
   fisch: [
-    { name: 'Fischplatte', desc: 'Scampi, Calamari und gegrilltes Lachsfilet mit Knoblauch, frischer Salat', price: '24,90', popular: true },
+    { name: 'Fischplatte', desc: 'Scampi, Calamari, gegrilltes Lachsfilet, Knoblauch, gemischter Salat', price: '22,90', popular: true },
     { name: 'Calamari Fritti', desc: 'Frittierte Calamari, gemischter Salat', price: '16,90' },
-    { name: 'Calamari alla Griglia', desc: 'Gegrillte Calamari mit Knoblauch, gemischter Salat', price: '16,90' },
-    { name: 'Calamari alla Napoli', desc: 'Calamari mit Knoblauch und Tomatensauce, frischer Salat', price: '16,90' },
-    { name: 'Cozze al Forno', desc: 'Muscheln mit delikater Sahnesauce und Knoblauch, überbacken', price: '15,90' },
-    { name: 'Cozze alla Napoli', desc: 'Muscheln mit Knoblauch, Kapern, Oliven, Zwiebeln und Tomatensauce', price: '15,90' },
-    { name: 'Cozze al Vino Bianco', desc: 'Muscheln mit Knoblauch-Weißweinsauce', price: '15,90' },
-    { name: 'Scampi alla Griglia', desc: 'Scampi vom Grill mit Knoblauch, gemischter Salat', price: '23,90' },
-    { name: 'Scampi alla Napoli', desc: 'Scampi mit Tomatensauce und Knoblauch, gemischter Salat', price: '23,90' },
-    { name: 'Gamberoni Vesuviana', desc: 'Riesenscampi mit Cognac-Sahnesauce, Krabben und grünem Pfeffer', price: '24,90' },
-    { name: 'Salmone Spinaci', desc: 'Lachs mit Sahnesauce auf Spinatnudeln', price: '24,90' },
+    { name: 'Calamari alla Griglia', desc: 'Gegrillte Calamari, Knoblauch, gemischter Salat', price: '16,90' },
+    { name: 'Calamari alla Napoli', desc: 'Calamari mit Knoblauch in Tomatensauce, gemischter Salat', price: '16,90' },
+    { name: 'Cozze al Forno', desc: 'Muscheln, delikate Sahnesauce, Knoblauch, Käse überbacken', price: '14,90' },
+    { name: 'Cozze alla Napoli', desc: 'Muscheln, Knoblauch, Tomatensauce, Oliven, Kapern, Zwiebeln', price: '14,90' },
+    { name: 'Cozze al Vino Bianco', desc: 'Muscheln, Knoblauch-Weissweinsauce', price: '14,90' },
+    { name: 'Scampi alla Griglia', desc: 'gegrillte Scampi, Knoblauch, gemischter Salat', price: '20,90' },
+    { name: 'Scampi alla Napoli', desc: 'Scampi, Tomatensauce, Knoblauch, gemischter Salat', price: '20,90' },
+    { name: 'Gamberoni Vesuviana', desc: 'Riesenscampi, Cognac-Sahnesauce, Krabben, grüner Pfeffer, gemischter Salat', price: '21,90' },
+    { name: 'Salmone Spinaci', desc: 'Lachs in Sahnesauce auf Spinatnudeln', price: '22,90' },
   ],
-  salate: [
-    { name: 'Insalata Verde', desc: 'Grüner Salat', prices: ['5,90', '7,60'], vegetarian: true },
-    { name: 'Insalata Rucola', desc: 'Rucola, Cherrytomaten, Rindfleischstreifen, Parmesan', prices: ['10,60', '13,40'] },
-    { name: 'Insalata Salmone', desc: 'Rucola, Lachs, Cherrytomaten, Parmesan', prices: ['10,60', '13,40'] },
-    { name: 'Insalata Pomodore', desc: 'Tomatensalat mit Oregano', prices: ['6,90', '8,90'], vegetarian: true },
-    { name: 'Insalata Cetrioli', desc: 'Gurkensalat mit Oregano', prices: ['6,40', '8,40'], vegetarian: true },
-    { name: 'Insalata Pecoraio', desc: 'Blattsalat mit Tomate, Gurke, Schafskäse', prices: ['8,40', '10,40'], vegetarian: true },
-    { name: 'Insalata Caprese', desc: 'Blattsalat mit Tomate, Mozzarella, Basilikum', prices: ['8,40', '10,40'], vegetarian: true },
-    { name: 'Insalata Bel Paese', desc: 'Blattsalat mit Tomate, Gurke, Thunfisch, Zwiebeln, Ei', prices: ['8,40', '10,90'] },
-    { name: 'Insalata Mista', desc: 'Gemischter Salat mit Blattsalat, Tomate, Gurke, Mais, Paprika, Kidneybohnen, Zwiebeln', prices: ['7,40', '9,90'], vegetarian: true },
-    { name: 'Insalata Frutti di Mare', desc: 'Insalata Mista mit Thunfisch und Meeresfrüchten', prices: ['9,40', '11,40'] },
-    { name: 'Insalata Italiana', desc: 'Insalata Mista mit Thunfisch, Schinken, Käse, Artischocken, Ei, Zwiebeln', prices: ['9,40', '11,90'] },
-    { name: 'Insalata dello Chef', desc: 'Insalata Mista mit Putenfleisch und Ei', prices: ['9,40', '11,90'] },
-    { name: 'Insalata Romantica', desc: 'Insalata Mista mit Thunfisch, Schinken, Artischocken, Ei, Krabben, Oliven, Kapern, Käse', prices: ['9,90', '12,40'], popular: true },
-    { name: 'Insalata Funghi', desc: 'Insalata Mista mit gebratenen Champignons', prices: ['8,90', '10,90'], vegetarian: true },
-    { name: 'Insalata Hawaii', desc: 'Grüner Salat mit Tomate, Gurke, Mais, Schinken, Ananas', prices: ['8,40', '10,40'] },
-    { name: 'Insalata Gambas', desc: 'Rucolasalat, Parmesan, Gambas, Cherrytomaten', prices: ['11,40', '15,90'] },
+  antipasti: [
+    { name: 'Lumache Romantica', desc: 'Schnecken, Sahnesauce, Knoblauch, Käse überbacken', price: '9,90' },
+    { name: 'Lumache al Pepe', desc: 'Schnecken in grüner Pfeffersauce, Käse überbacken', price: '9,90' },
+    { name: 'Lumache III', desc: 'Schnecken, Kräuterbutter, Käse überbacken', price: '9,90' },
+    { name: 'Caprese', desc: 'Mozzarella, Tomaten, Gewürze', price: '10,90' },
+    { name: 'Antipasta Parma', desc: 'Parmaschinken, Parmesan, Rucola, Cherrytomaten', price: '10,90' },
+    { name: 'Antipasta Mista', desc: 'kalte Vorspeise nach Art des Hauses', price: '11,90' },
+    { name: 'Carpaccio', desc: 'Rind, Rucolasalat, Parmesan, Cherrytomaten', price: '11,90' },
+    { name: 'Bruschetta', desc: 'Tomaten, Mozzarella, Zwiebeln', price: '9,90' },
+  ],
+  omelette: [
+    { name: 'Omelette Spinaci', desc: 'Spinat und gemischter Salat', price: '10,90' },
+    { name: 'Omelette Prosciutto', desc: 'Schinken und gemischter Salat', price: '10,90' },
+    { name: 'Omelette Tonnos', desc: 'Thunfisch, Zwiebeln und gemischter Salat', price: '10,90' },
+    { name: 'Omelette Mozzarella', desc: 'Mozzarella und gemischter Salat', price: '10,90' },
+    { name: 'Omelette Funghi', desc: 'Champignons und gemischter Salat', price: '10,90' },
+  ],
+  rice: [
+    { name: 'Risotto del Pescatore', desc: 'Meeresfrüchte, Knoblauch, Tomatensauce', price: '11,90' },
+    { name: 'Risotto Milanese', desc: 'Schinken, Champignons, Sahnesauce', price: '10,60' },
+    { name: 'Risotto dello Chef', desc: 'Hähnchenfleisch, Champignons, Sahnesauce', price: '12,90' },
+    { name: 'Risotto al Verdure', desc: 'Gemüse, Hähnchenbrust, in Olivenöl', price: '12,90' },
+  ],
+  vegetable: [
+    { name: 'Zucchini mit Schinken', desc: 'in Tomaten-Sahnesauce, Käse überbacken', price: '10,60' },
+    { name: 'Broccoli al Forno', desc: 'Broccoli, Kartoffeln in Spezialsauce, Käse überbacken', price: '10,60' },
+    { name: 'Funghi al Forno', desc: 'Champignons in Spezialsauce, Käse überbacken', price: '10,60' },
+    { name: 'Verdure al Forno', desc: 'verschiedene Gemüsearten, Knoblauch in Tomaten-Sahnesauce, Käse überbacken', price: '10,60' },
   ],
   desserts: [
     { name: 'Tiramisu', desc: 'Klassisches italienisches Tiramisu', price: '5,90', popular: true },
-    { name: 'Panna Cotta', desc: 'Italienische Panna Cotta mit Beerensoße', price: '5,90' },
+    { name: 'Panna Cotta', desc: 'Italienische Panna Cotta', price: '5,90' },
   ],
   drinks: [
-    { name: 'Coca-Cola (1,0l)', desc: 'Erfrischungsgetränk', price: '4,40' },
-    { name: 'Coca-Cola light (1,0l)', desc: 'Erfrischungsgetränk', price: '4,40' },
-    { name: 'Fanta (1,0l)', desc: 'Erfrischungsgetränk', price: '4,40' },
-    { name: 'Sprite (1,0l)', desc: 'Erfrischungsgetränk', price: '4,40' },
-    { name: 'Mineralwasser (1,0l)', desc: 'Mineralwasser', price: '3,90' },
-    { name: 'Bitburger Pils (0,33l)', desc: 'Alk. 4.8% vol.', price: '3,40' },
-    { name: 'Köstritzer Schwarzbier (0,33l)', desc: 'Dunkles Bier', price: '3,90' },
-    { name: 'Frascati (0,7l)', desc: 'Italienischer Weißwein', price: '15,90' },
-    { name: 'Pinot Grigio (0,7l)', desc: 'Italienischer Weißwein', price: '15,40' },
-    { name: 'Lambrusco (0,7l)', desc: 'Italienischer Rotwein', price: '15,40' },
-    { name: 'Chianti (0,7l)', desc: 'Italienischer Rotwein', price: '15,90' },
-    { name: 'Merlot (0,7l)', desc: 'Italienischer Rotwein', price: '15,90' },
+    { name: 'Kaffee', desc: '', price: '2,40' },
+    { name: 'Milchkaffee', desc: '', price: '3,20' },
+    { name: 'Cappuccino', desc: '', price: '2,90' },
+    { name: 'Latte Macchiato', desc: '', price: '3,40' },
+    { name: 'Espresso', desc: '', price: '2,40' },
+    { name: 'Espresso Doppel', desc: '', price: '3,60' },
+    { name: 'Heiße Schokolade', desc: '', price: '2,90' },
   ],
 }
 
@@ -425,13 +452,16 @@ export default function SpeisekartePage() {
   const pizzaPage3 = menuData.pizza.slice(30)
   
   // Split pasta items
-  const pastaPage1 = menuData.pasta.slice(0, 16)
-  const pastaPage2 = menuData.pasta.slice(16, 32)
-  const pastaPage3 = menuData.pasta.slice(32)
+  const pastaPage1 = menuData.pasta.slice(0, 13)
+  const pastaPage2 = menuData.pasta.slice(13, 26)
+  const pastaPage3 = menuData.pasta.slice(26)
 
   // Split fleisch items
-  const fleischPage1 = menuData.fleisch.slice(0, 15)
-  const fleischPage2 = menuData.fleisch.slice(15)
+  const fleischPage1 = menuData.fleisch.slice(0, 12)
+  const fleischPage2 = menuData.fleisch.slice(12)
+  
+  // Split salate items
+  const salateAll = menuData.salate
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-900 via-gray-900 to-red-900 flex flex-col">
@@ -609,19 +639,69 @@ export default function SpeisekartePage() {
               </div>
             </Page>
 
-            {/* Salate */}
+            {/* Antipasti */}
             <Page pageNumber={10}>
+              <CategoryHeader title="Antipasti" subtitle="Vorspeisen" />
+              <div className="space-y-0">
+                {menuData.antipasti.map((item, i) => (
+                  <MenuItem key={i} item={item} />
+                ))}
+              </div>
+            </Page>
+
+            {/* Gyros */}
+            <Page pageNumber={11}>
+              <CategoryHeader title="Gyros Gerichte" subtitle="mit Pommes & Salat" />
+              <div className="space-y-0">
+                {menuData.gyros.map((item, i) => (
+                  <MenuItem key={i} item={item} />
+                ))}
+              </div>
+            </Page>
+
+            {/* Omelette & Rice */}
+            <Page pageNumber={12}>
+              <div className="mb-8">
+                <CategoryHeader title="Omelette" subtitle="Frittata" />
+                <div className="space-y-0">
+                  {menuData.omelette.map((item, i) => (
+                    <MenuItem key={i} item={item} />
+                  ))}
+                </div>
+              </div>
+              <div>
+                <CategoryHeader title="Reis" subtitle="Risotto" />
+                <div className="space-y-0">
+                  {menuData.rice.map((item, i) => (
+                    <MenuItem key={i} item={item} />
+                  ))}
+                </div>
+              </div>
+            </Page>
+
+            {/* Vegetable Dishes */}
+            <Page pageNumber={13}>
+              <CategoryHeader title="Gemüse Gerichte" subtitle="Verdure" />
+              <div className="space-y-0">
+                {menuData.vegetable.map((item, i) => (
+                  <MenuItem key={i} item={item} />
+                ))}
+              </div>
+            </Page>
+
+            {/* Salate */}
+            <Page pageNumber={14}>
               <CategoryHeader title="Salate" subtitle="Insalate" />
               <p className="text-gray-500 text-xs text-center mb-4 font-medium">Größen: Klein | Groß</p>
               <div className="space-y-0">
-                {menuData.salate.map((item, i) => (
+                {salateAll.map((item, i) => (
                   <MenuItem key={i} item={item} showSizes twoSizes />
                 ))}
               </div>
             </Page>
 
             {/* Desserts & Drinks */}
-            <Page pageNumber={11}>
+            <Page pageNumber={15}>
               <CategoryHeader title="Desserts & Getränke" subtitle="Dolci e Bevande" />
               <div className="mb-8">
                 <h3 className="text-green-800 font-semibold text-lg mb-4 border-b border-green-800/20 pb-2">Desserts</h3>
@@ -630,7 +710,7 @@ export default function SpeisekartePage() {
                 ))}
               </div>
               <div>
-                <h3 className="text-green-800 font-semibold text-lg mb-4 border-b border-green-800/20 pb-2">Getränke</h3>
+                <h3 className="text-green-800 font-semibold text-lg mb-4 border-b border-green-800/20 pb-2">Heiße Getränke</h3>
                 {menuData.drinks.map((item, i) => (
                   <MenuItem key={i} item={item} />
                 ))}
