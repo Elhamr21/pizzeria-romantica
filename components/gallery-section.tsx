@@ -30,7 +30,7 @@ const galleryImages: GalleryImage[] = [
   { id: '3', src: '/images/food1.png', alt: 'Hausgemachte Spaghetti Bolognese', category: 'food' },
   { id: '4', src: '/images/food2.png', alt: 'Pizza Diavola mit scharfer Salami', category: 'pizza' },
   { id: '5', src: '/images/gallery/drinks-1.jpg', alt: 'Aperol Spritz Cocktail', category: 'drinks' },
-  { id: '6', src: '/images/ambient2.png', alt: 'Romantische Tischdekoration', category: 'interior' },
+  { id: '6', src: '/images/ambient.png', alt: 'Romantische Tischdekoration', category: 'interior' },
   { id: '7', src: '/images/gallery/calzone-1.jpg', alt: 'Knusprige Calzone', category: 'food' },
   { id: '8', src: '/images/food3.png', alt: 'Quattro Formaggi Pizza', category: 'pizza' },
   { id: '9', src: '/images/gallery/drinks-2.jpg', alt: 'Italienischer Rotwein', category: 'drinks' },

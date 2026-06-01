@@ -18,7 +18,7 @@ export function AboutSection() {
           >
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/ambient.png"
+                src="/images/ambient2.png"
                 alt="Interior of Pizzeria Romantica with cozy Italian atmosphere"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
