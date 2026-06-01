@@ -25,18 +25,18 @@ const galleryCategories: { id: GalleryCategory; label: string }[] = [
 ]
 
 const galleryImages: GalleryImage[] = [
-  { id: '1', src: '/images/gallery/pizza-1.jpg', alt: 'Frisch gebackene Margherita Pizza', category: 'pizza' },
-  { id: '2', src: '/images/gallery/interior-1.jpg', alt: 'Gemütlicher Innenbereich des Restaurants', category: 'interior' },
-  { id: '3', src: '/images/gallery/pasta-1.jpg', alt: 'Hausgemachte Spaghetti Bolognese', category: 'food' },
-  { id: '4', src: '/images/gallery/pizza-2.jpg', alt: 'Pizza Diavola mit scharfer Salami', category: 'pizza' },
+  { id: '1', src: '/images/food.png', alt: 'Frisch gebackene Margherita Pizza', category: 'pizza' },
+  { id: '2', src: '/images/ambient1.png', alt: 'Gemütlicher Innenbereich des Restaurants', category: 'interior' },
+  { id: '3', src: '/images/food1.png', alt: 'Hausgemachte Spaghetti Bolognese', category: 'food' },
+  { id: '4', src: '/images/food2.png', alt: 'Pizza Diavola mit scharfer Salami', category: 'pizza' },
   { id: '5', src: '/images/gallery/drinks-1.jpg', alt: 'Aperol Spritz Cocktail', category: 'drinks' },
-  { id: '6', src: '/images/gallery/interior-2.jpg', alt: 'Romantische Tischdekoration', category: 'interior' },
+  { id: '6', src: '/images/ambient2.png', alt: 'Romantische Tischdekoration', category: 'interior' },
   { id: '7', src: '/images/gallery/calzone-1.jpg', alt: 'Knusprige Calzone', category: 'food' },
-  { id: '8', src: '/images/gallery/pizza-3.jpg', alt: 'Quattro Formaggi Pizza', category: 'pizza' },
+  { id: '8', src: '/images/food3.png', alt: 'Quattro Formaggi Pizza', category: 'pizza' },
   { id: '9', src: '/images/gallery/drinks-2.jpg', alt: 'Italienischer Rotwein', category: 'drinks' },
-  { id: '10', src: '/images/gallery/dessert-1.jpg', alt: 'Klassisches Tiramisu', category: 'food' },
-  { id: '11', src: '/images/gallery/interior-3.jpg', alt: 'Stimmungsvolle Beleuchtung am Abend', category: 'interior' },
-  { id: '12', src: '/images/gallery/pizza-4.jpg', alt: 'Pizza mit frischem Rucola', category: 'pizza' },
+  { id: '10', src: '/images/food4.png', alt: 'Klassisches Tiramisu', category: 'food' },
+  { id: '11', src: '/images/ambient3.png', alt: 'Stimmungsvolle Beleuchtung am Abend', category: 'interior' },
+  { id: '12', src: '/images/food5.png', alt: 'Pizza mit frischem Rucola', category: 'pizza' },
 ]
 
 export function GallerySection() {
