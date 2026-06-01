@@ -54,6 +54,11 @@ const menuData = {
     { name: 'Tacchino', desc: 'Hähnchenfleisch, Champignons, Zwiebeln', prices: ['9,60', '11,90', '13,90'] },
     { name: 'Speciale', desc: 'Krabben, Spinat, Knoblauch, Sahnesauce', prices: ['10,60', '13,90', '14,90'] },
     { name: 'Romantica', desc: 'nach Art des Hauses', prices: ['10,60', '13,90', '14,90'], popular: true },
+    { name: 'Überraschung für 2 Personen', desc: 'Spezialüberraschung für zwei Personen', prices: ['-', '-', '19,90'] },
+    { name: 'Extra Zutat (ausgenommen Lachs)', desc: 'Extra Belag Ihrer Wahl', prices: ['1,00', '1,50', '2,50'] },
+    { name: 'Extra Zutat Lachs', desc: 'Extra Lachsbelag', prices: ['2,00', '3,00', '4,00'] },
+    { name: 'Pizzabrötchen', desc: '10 Stk. mit Kräuterbutter oder Aioli', prices: ['4,50', '-', '-'] },
+    { name: 'gefüllte Pizzabrötchen', desc: '8 Stk. mit Käse und 1 Füllung nach Wahl (Salami, Schinken, Spinat, Champignons oder Thunfisch)', prices: ['8,50', '-', '-'] },
   ],
   salate: [
     { name: 'Verde', desc: 'Grüner Salat', prices: ['4,40', '5,90'], vegetarian: true },
@@ -147,13 +152,20 @@ const menuData = {
     { name: 'Bistecca Pizzaiola', desc: 'gegr. Argentinisches Rumpsteak, Knoblauch, in Tomatensauce', price: '23,90' },
     { name: 'Steak Diavolo', desc: 'mit Krabben, Mischpilzen (pikant, scharf)', price: '24,90', spicy: true },
   ],
-  gyros: [
+gyros: [
     { name: 'Gyros-Teller', desc: 'mit Gyros, Zwiebeln, Tzatziki', price: '14,10' },
     { name: 'Gyros Bernaise', desc: 'Gyros mit Sauce Bernaise, Käse überbacken', price: '14,60' },
     { name: 'Gyros Hollandaise', desc: 'Gyros mit Sauce Hollandaise, Käse überbacken', price: '14,60' },
     { name: 'Gyros Funghi', desc: 'Gyros mit Champignons, Sahnesauce, Käse überbacken', price: '14,60' },
     { name: 'Gyros des Hauses', desc: 'Gyros, Pfeffersauce, Käse überbacken', price: '14,60' },
     { name: 'Gyros Metaxa', desc: 'Gyros, Metaxasauce, Käse überbacken', price: '14,60' },
+    { name: 'Gyros Pizza', desc: 'Gyros, Zwiebeln, Peperoni', prices: ['11,90€ , 12,90'] },
+    { name: 'Gyros Pizza Spezial', desc: 'Gyros, Salat, Tzatziki (nach dem Backen)', prices: ['12,90€ , 13,90'] },
+    { name: 'extra Tzatziki', desc: 'Kräuterbutter & Aioli', price: '2,00' },
+    { name: 'Pommes oder Kroketten', desc: 'Beilage', price: '4,00' },
+    { name: 'Chicken Nuggets', desc: '9 Stk.', price: '5,90' },
+    { name: 'Ketchup', desc: 'Sauce', price: '1,00' },
+    { name: 'Mayonnaise', desc: 'Sauce', price: '1,00' },
   ],
   fisch: [
     { name: 'Fischplatte', desc: 'Scampi, Calamari, gegrilltes Lachsfilet, Knoblauch, gemischter Salat', price: '22,90', popular: true },
@@ -202,13 +214,86 @@ const menuData = {
     { name: 'Panna Cotta', desc: 'Italienische Panna Cotta', price: '5,90' },
   ],
   drinks: [
+    // Bier (Flaschen)
+    { name: 'Bitburger Pils', desc: '0,33 l', price: '3,20' },
+    { name: 'Bitburger Pils', desc: '0,5 l', price: '5,20' },
+    { name: 'Bitburger Radler', desc: '0,33 l', price: '3,20' },
+    { name: 'Bitburger Radler', desc: '0,5 l', price: '5,20' },
+    { name: 'Bitburger Alsterwasser', desc: '0,33 l', price: '3,20' },
+    { name: 'Bitburger Alsterwasser', desc: '0,5 l', price: '5,20' },
+    { name: 'Bitburger mit Cola', desc: '0,33 l', price: '3,20' },
+    { name: 'Bitburger mit Cola', desc: '0,5 l', price: '5,20' },
+    { name: 'Köstritzer Schwarzbier', desc: '0,33 l', price: '3,90' },
+    
+    // Bier vom Fass
+    { name: 'Benediktiner Hefeweissbier', desc: '0,5 l', price: '5,20' },
+    { name: 'Benediktiner Weissbier Dunkel', desc: '0,5 l', price: '5,20' },
+    { name: 'Benediktiner Weissbier Alkoholfrei', desc: '0,5 l', price: '5,20' },
+    { name: 'Bitburger Alkoholfrei', desc: '0,33 l', price: '3,90' },
+    { name: 'Radler Alkoholfrei', desc: '0,33 l', price: '3,90' },
+    { name: 'Vitamalz Malzbier', desc: '0,33 l', price: '3,20' },
+    
+    // Heiße Getränke
     { name: 'Kaffee', desc: '', price: '2,40' },
     { name: 'Milchkaffee', desc: '', price: '3,20' },
-    { name: 'Cappuccino', desc: '', price: '2,90' },
+    { name: 'Cappuccino', desc: 'mit Milch', price: '2,90' },
     { name: 'Latte Macchiato', desc: '', price: '3,40' },
     { name: 'Espresso', desc: '', price: '2,40' },
-    { name: 'Espresso Doppel', desc: '', price: '3,60' },
+    { name: 'Espresso Doppio', desc: '', price: '3,60' },
+    { name: 'Espresso Corretto', desc: 'mit einem Schuss Grappa', price: '4,20' },
     { name: 'Heiße Schokolade', desc: '', price: '2,90' },
+    { name: 'Heißer Tee', desc: 'versch. Sorten', price: '2,20' },
+    
+    // Mineralwasser
+    { name: 'Gerolsteiner classic', desc: '0,25 l', price: '2,60' },
+    { name: 'Gerolsteiner classic', desc: '0,75 l', price: '5,90' },
+    { name: 'Gerolsteiner Naturell', desc: '0,25 l', price: '2,60' },
+    { name: 'Gerolsteiner Naturell', desc: '0,75 l', price: '5,90' },
+    
+    // Softdrinks
+    { name: 'Coca-Cola', desc: '0,2 l', price: '2,60' },
+    { name: 'Coca-Cola', desc: '0,4 l', price: '4,20' },
+    { name: 'Coca-Cola light', desc: '0,2 l', price: '2,60' },
+    { name: 'Coca-Cola light', desc: '0,4 l', price: '4,20' },
+    { name: 'Coca-Cola Zero', desc: '0,2 l', price: '2,60' },
+    { name: 'Coca-Cola Zero', desc: '0,4 l', price: '4,20' },
+    { name: 'Fanta', desc: '0,2 l', price: '2,60' },
+    { name: 'Fanta', desc: '0,4 l', price: '4,20' },
+    { name: 'Sprite', desc: '0,2 l', price: '2,60' },
+    { name: 'Sprite', desc: '0,4 l', price: '4,20' },
+    { name: 'Mezzo Mix', desc: '0,2 l', price: '2,60' },
+    { name: 'Mezzo Mix', desc: '0,4 l', price: '4,20' },
+    { name: 'Orangensaft', desc: '0,2 l', price: '2,60' },
+    { name: 'Orangensaft', desc: '0,4 l', price: '4,20' },
+    { name: 'Apfelsaft', desc: '0,2 l', price: '2,60' },
+    { name: 'Apfelsaft', desc: '0,4 l', price: '4,20' },
+    { name: 'Maracujaschorle', desc: '0,2 l', price: '2,60' },
+    { name: 'Maracujaschorle', desc: '0,4 l', price: '4,20' },
+    { name: 'Gerolsteiner Apfelschorle', desc: '0,33 l', price: '3,60' },
+    { name: 'Schwarzer Tee, Pfirsich', desc: '0,33 l', price: '3,60' },
+    { name: 'Vio Schorle', desc: 'Johannisbeere oder Apfel, 0,25 l', price: '3,60' },
+    
+    // Offene Weine (Weißwein)
+    { name: 'Pino Grigio Corte Nova IGT', desc: 'Italien, Venetien, 0,2 l', price: '5,20' },
+    { name: 'Weißwein, lieblich', desc: 'Kollektion Pfalz, Deutschland, 0,2 l', price: '5,20' },
+    
+    // Offene Weine (Rotwein)
+    { name: 'Merlot Rocca Bastia IGT', desc: 'Italien, Venetien, 0,2 l', price: '5,20' },
+    { name: 'Lambrusco Rocca Bastian', desc: 'lieblich, Italien, Venetien, 0,2 l', price: '5,20' },
+    { name: 'Rose', desc: '0,2 l', price: '5,20' },
+    { name: 'Primitivo', desc: '0,2 l', price: '5,20' },
+    { name: 'Rotwein', desc: 'Kroatien, 0,2 l', price: '5,20' },
+    
+    // Spirituosen (2 cl)
+    { name: 'Haus Grappe', desc: '2 cl', price: '2,90' },
+    { name: 'Ramazotti', desc: '2 cl', price: '2,90' },
+    { name: 'Averna', desc: '2 cl', price: '2,90' },
+    { name: 'Sambuca', desc: '2 cl', price: '2,90' },
+    { name: 'Gernet Branca', desc: '2 cl', price: '2,90' },
+    { name: 'Wodka', desc: '2 cl', price: '2,90' },
+    { name: 'Eversbusch', desc: '2 cl', price: '2,90' },
+    { name: 'Campari Orange', desc: '', price: '4,90' },
+    { name: 'Ouzo', desc: '2 cl', price: '2,90' }
   ],
 }
 
