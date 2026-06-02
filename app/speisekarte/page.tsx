@@ -419,7 +419,7 @@ function MenuItem({
   showSizes = false,
   twoSizes = false
 }: { 
-  item: { name: string; desc: string; price?: string; prices?: string[]; spicy?: boolean; vegetarian?: boolean; popular?: boolean }
+  item: { name: string; desc: string; price?: string; prices?: (string | undefined)[]; spicy?: boolean; vegetarian?: boolean; popular?: boolean }
   showSizes?: boolean
   twoSizes?: boolean
 }) {
