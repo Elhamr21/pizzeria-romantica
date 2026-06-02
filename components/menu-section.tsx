@@ -30,34 +30,33 @@ const categories: { id: MenuCategory; label: string; icon: string }[] = [
 
 const menuItems: MenuItem[] = [
   // Pizza
-  { id: '1', name: 'Margherita', description: 'Tomatensauce, Mozzarella, frisches Basilikum', price: 10.50, image: '/images/menu/margherita.jpg', category: 'pizza', badges: ['popular', 'vegetarian'] },
-  { id: '2', name: 'Diavola', description: 'Tomatensauce, Mozzarella, scharfe Salami, Peperoni', price: 13.50, image: '/images/menu/diavola.jpg', category: 'pizza', badges: ['spicy'] },
-  { id: '3', name: 'Quattro Formaggi', description: 'Mozzarella, Gorgonzola, Parmesan, Ricotta', price: 14.00, image: '/images/menu/quattro-formaggi.jpg', category: 'pizza', badges: ['vegetarian'] },
-  { id: '4', name: 'Prosciutto e Funghi', description: 'Tomatensauce, Mozzarella, Schinken, Champignons', price: 13.00, image: '/images/menu/prosciutto-funghi.jpg', category: 'pizza', badges: ['popular'] },
-  { id: '5', name: 'Tonno', description: 'Tomatensauce, Mozzarella, Thunfisch, Zwiebeln', price: 13.50, image: '/images/menu/tonno.jpg', category: 'pizza' },
-  { id: '6', name: 'Vegetariana', description: 'Tomatensauce, Mozzarella, frisches Gemüse der Saison', price: 12.50, image: '/images/menu/vegetariana.jpg', category: 'pizza', badges: ['vegetarian'] },
+  { id: '1', name: 'Margherita', description: 'Tomatensauce, Mozzarella, frisches Basilikum', price: 10.40, image: '/images/menu/margherita.jpg', category: 'pizza', badges: ['popular', 'vegetarian'] },
+  { id: '2', name: 'Diavola', description: 'Tomatensauce, Mozzarella, scharfe Salami, Peperoni', price: 13.90, image: '/images/menu/diavola.jpg', category: 'pizza', badges: ['spicy'] },
+  { id: '3', name: 'Quattro Formaggi', description: 'Mozzarella, Gorgonzola, Parmesan, Ricotta', price: 13.90, image: '/images/menu/quattro-formaggi.jpg', category: 'pizza', badges: ['vegetarian'] },
+  { id: '4', name: 'Funghi', description: 'Tomatensauce, Mozzarella, Schinken, Champignons', price: 11.90, image: '/images/menu/prosciutto-funghi.jpg', category: 'pizza', badges: ['popular'] },
+  { id: '5', name: 'Tonno', description: 'Tomatensauce, Mozzarella, Thunfisch, Zwiebeln', price: 13.60, image: '/images/menu/tonno.jpg', category: 'pizza' },
+  { id: '6', name: 'Vegetariana', description: 'Tomatensauce, Mozzarella, frisches Gemüse der Saison', price: 13.90, image: '/images/menu/vegetariana.jpg', category: 'pizza', badges: ['vegetarian'] },
   // Salads
-  { id: '7', name: 'Insalata Mista', description: 'Gemischter Salat mit Tomaten, Gurken, Oliven', price: 8.50, image: '/images/menu/insalata-mista.jpg', category: 'salads', badges: ['vegetarian'] },
-  { id: '8', name: 'Insalata Caprese', description: 'Tomaten, Mozzarella, frisches Basilikum, Olivenöl', price: 10.00, image: '/images/menu/caprese.jpg', category: 'salads', badges: ['popular', 'vegetarian'] },
-  { id: '9', name: 'Caesar Salad', description: 'Römersalat, Parmesan, Croutons, Caesar Dressing', price: 11.50, image: '/images/menu/caesar.jpg', category: 'salads' },
+  { id: '7', name: 'Insalata Mista', description: 'Gemischter Salat mit Tomaten, Gurken, Oliven', price: 8.90, image: '/images/menu/insalata-mista.jpg', category: 'salads', badges: ['vegetarian'] },
+  { id: '8', name: 'Insalata Caprese', description: 'Tomaten, Mozzarella, frisches Basilikum, Olivenöl', price: 9.90, image: '/images/menu/caprese.jpg', category: 'salads', badges: ['popular', 'vegetarian'] },
+  { id: '9', name: 'Caesar Pecoraio', description: ' Blattsalat, Tomaten, Gurken, Schafskäse', price: 9.90, image: '/images/menu/caesar.jpg', category: 'salads' },
   // Calzone
   { id: '10', name: 'Calzone Classico', description: 'Gefüllt mit Schinken, Mozzarella, Champignons, Tomatensauce', price: 13.50, image: '/images/menu/calzone-classico.jpg', category: 'calzone', badges: ['popular'] },
   { id: '11', name: 'Calzone Vegetariano', description: 'Gefüllt mit Spinat, Ricotta, Mozzarella, Knoblauch', price: 12.50, image: '/images/menu/calzone-vegetariano.jpg', category: 'calzone', badges: ['vegetarian'] },
   { id: '12', name: 'Calzone Piccante', description: 'Gefüllt mit scharfer Salami, Peperoni, Mozzarella', price: 14.00, image: '/images/menu/calzone-piccante.jpg', category: 'calzone', badges: ['spicy'] },
   // Pasta
-  { id: '13', name: 'Spaghetti Bolognese', description: 'Klassische Fleischsauce nach Hausrezept', price: 11.50, image: '/images/menu/bolognese.jpg', category: 'pasta', badges: ['popular'] },
-  { id: '14', name: 'Penne Arrabiata', description: 'Scharfe Tomatensauce mit Knoblauch und Peperoni', price: 10.50, image: '/images/menu/arrabiata.jpg', category: 'pasta', badges: ['spicy', 'vegetarian'] },
-  { id: '15', name: 'Lasagne', description: 'Hausgemachte Lasagne mit Béchamelsauce', price: 13.00, image: '/images/menu/lasagne.jpg', category: 'pasta', badges: ['popular'] },
-  { id: '16', name: 'Tagliatelle Carbonara', description: 'Speck, Ei, Parmesan, schwarzer Pfeffer', price: 12.50, image: '/images/menu/carbonara.jpg', category: 'pasta' },
+  { id: '13', name: 'Spaghetti Bolognese', description: 'Klassische Fleischsauce nach Hausrezept', price: 9.90, image: '/images/menu/bolognese.jpg', category: 'pasta', badges: ['popular'] },
+  { id: '14', name: 'Penne Arrabiata', description: 'Scharfe Tomatensauce mit Knoblauch und Peperoni', price: 10.90, image: '/images/menu/arrabiata.jpg', category: 'pasta', badges: ['spicy', 'vegetarian'] },
+  { id: '15', name: 'Lasagne', description: 'Hausgemachte Lasagne mit Béchamelsauce', price: 10.60, image: '/images/menu/lasagne.jpg', category: 'pasta', badges: ['popular'] },
+  { id: '16', name: 'Tagliatelle Al Pesto', description: 'Basilikum, Parmesan, Knoblauch in Sahnesauce', price: 11.40, image: '/images/menu/carbonara.jpg', category: 'pasta' },
   // Desserts
-  { id: '17', name: 'Tiramisu', description: 'Klassisches italienisches Tiramisu', price: 6.50, image: '/images/menu/tiramisu.jpg', category: 'desserts', badges: ['popular'] },
-  { id: '18', name: 'Panna Cotta', description: 'Mit Beerensoße und frischen Früchten', price: 5.50, image: '/images/menu/panna-cotta.jpg', category: 'desserts', badges: ['vegetarian'] },
-  { id: '19', name: 'Tartufo', description: 'Italienisches Schokoladeneis mit Haselnüssen', price: 5.00, image: '/images/menu/tartufo.jpg', category: 'desserts' },
-  // Drinks
-  { id: '20', name: 'Hauswein Rot', description: 'Italienischer Rotwein, 0.25l', price: 4.50, image: '/images/menu/red-wine.jpg', category: 'drinks' },
-  { id: '21', name: 'Hauswein Weiß', description: 'Italienischer Weißwein, 0.25l', price: 4.50, image: '/images/menu/white-wine.jpg', category: 'drinks' },
-  { id: '22', name: 'Aperol Spritz', description: 'Aperol, Prosecco, Soda', price: 7.50, image: '/images/menu/aperol.jpg', category: 'drinks', badges: ['popular'] },
-  { id: '23', name: 'Espresso', description: 'Italienischer Espresso', price: 2.50, image: '/images/menu/espresso.jpg', category: 'drinks' },
+  { id: '17', name: 'Tiramisu', description: 'Klassisches italienisches Tiramisu', price: 5.90, image: '/images/menu/tiramisu.jpg', category: 'desserts', badges: ['popular'] },
+  { id: '18', name: 'Panna Cotta', description: 'Mit Beerensoße und frischen Früchten', price: 5.90, image: '/images/menu/panna-cotta.jpg', category: 'desserts', badges: ['vegetarian'] },
+    // Drinks
+  { id: '20', name: 'Hauswein Rot', description: 'Italienischer Rotwein, 0.25l', price: 5.20, image: '/images/menu/red-wine.jpg', category: 'drinks' },
+  { id: '21', name: 'Hauswein Weiß', description: 'Italienischer Weißwein, 0.25l', price: 5.20, image: '/images/menu/white-wine.jpg', category: 'drinks' },
+  { id: '22', name: 'Aperol Spritz', description: 'Aperol, Prosecco, Soda', price: 6.90, image: '/images/menu/aperol.jpg', category: 'drinks', badges: ['popular'] },
+  { id: '23', name: 'Espresso', description: 'Italienischer Espresso', price: 2.40, image: '/images/menu/espresso.jpg', category: 'drinks' },
 ]
 
 function BadgeIcon({ type }: { type: 'popular' | 'vegetarian' | 'spicy' }) {
