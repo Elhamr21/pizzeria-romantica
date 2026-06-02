@@ -23,13 +23,13 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.facebook.com/p/Pizzeria-Romantica-Haspe-100047161285897/"
                 className="p-2 bg-muted rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="p-2 bg-muted rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Instagram"
@@ -42,7 +42,7 @@ export function Footer() {
                 aria-label="Email"
               >
                 <Mail className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -88,8 +88,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a href="tel:+4923311276622" className="hover:text-primary transition-colors">
-                  +49 2331 1276622
+                <a href="tel:23311276622" className="hover:text-primary transition-colors">
+                   2331 1276622
                 </a>
               </li>
             </ul>

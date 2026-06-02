@@ -53,19 +53,13 @@ export function AboutSection() {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Seit 2009 bringen wir den authentischen Geschmack Italiens nach Hagen. Was als kleiner 
-                Traum einer italienischen Familie begann, ist heute ein beliebter Treffpunkt für alle, 
-                die echte italienische Gastfreundschaft erleben möchten.
+                Seit 2009 bringen wir den authentischen Geschmack Italiens nach Hagen. Was als Traum einer italienischen Familie begann, ist heute ein beliebter Treffpunkt für alle, die gutes Essen und echte italienische Gastfreundschaft schätzen.
               </p>
               <p>
-                Unsere Pizzen werden nach überlieferten Familienrezepten zubereitet – mit handverlesenem 
-                Teig, der 48 Stunden ruht, und nur den frischesten Zutaten. Jeder Bissen erzählt die 
-                Geschichte unserer Heimat.
+               Unsere Pizzen werden nach traditionellen Familienrezepten zubereitet – mit sorgfältig verarbeitetem Teig und frischen, ausgewählten Zutaten. Jeder Bissen spiegelt unsere Leidenschaft für die italienische Küche und unsere Liebe zur Qualität wider.
               </p>
               <p>
-                Ob Sie unsere berühmten Calzones probieren, die großzügig gefüllt sind, oder unsere 
-                hausgemachte Pasta genießen – bei uns erwartet Sie immer eine warme Atmosphäre und 
-                herzliche Bedienung.
+                Probieren Sie unsere beliebten, großzügig gefüllten Calzoni oder genießen Sie unsere hausgemachte Pasta nach italienischer Tradition. In unserem Restaurant erwarten Sie eine familiäre Atmosphäre, herzlicher Service und ein kulinarisches Erlebnis, das Sie direkt nach Italien entführt.
               </p>
             </div>
 

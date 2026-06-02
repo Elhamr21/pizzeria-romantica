@@ -122,7 +122,7 @@ export default function DatenschutzPage() {
                   Voerder Str. 10<br />
                   58135 Hagen<br />
                   <br />
-                  Telefon: +49 2331 1276622<br />
+                  Telefon:  2331 1276622<br />
                   E-Mail: info@pizza-romantica-hagen.de
                 </p>
               </div>

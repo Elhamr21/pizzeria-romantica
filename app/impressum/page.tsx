@@ -45,7 +45,7 @@ export default function ImpressumPage() {
             <h2 className="text-2xl font-semibold text-foreground mb-4">Kontakt</h2>
             <div className="bg-card rounded-lg p-6 border border-border space-y-2">
               <p className="text-muted-foreground">
-                <span className="font-medium text-foreground">Telefon:</span> +49 2331 1276622
+                <span className="font-medium text-foreground">Telefon:</span>  2331 1276622
               </p>
               <p className="text-muted-foreground">
                 <span className="font-medium text-foreground">E-Mail:</span> info@pizza-romantica-hagen.de

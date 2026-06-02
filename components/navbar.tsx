@@ -144,7 +144,7 @@ export function Navbar() {
               <div className="pt-4 space-y-3 border-t border-border">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Phone className="h-4 w-4" />
-                  <a href="tel:+4923311276622" className="hover:text-primary">+49 2331 1276622</a>
+                  <a href="tel:23311276622" className="hover:text-primary"> 2331 1276622</a>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4" />
