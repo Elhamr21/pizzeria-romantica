@@ -68,10 +68,10 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground">Telefon</h4>
                   <a
-                    href="tel:23311276622"
+                    href="tel:023311276622"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                     2331 1276622
+                     02331 1276622
                   </a>
                   <p className="text-xs text-muted-foreground mt-1">Zum Anrufen klicken</p>
                 </div>

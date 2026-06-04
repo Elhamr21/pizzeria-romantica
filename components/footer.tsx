@@ -88,8 +88,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a href="tel:23311276622" className="hover:text-primary transition-colors">
-                   2331 1276622
+                <a href="tel:023311276622" className="hover:text-primary transition-colors">
+                   02331 1276622
                 </a>
               </li>
             </ul>
@@ -102,20 +102,26 @@ export function Footer() {
               <li className="flex items-start gap-2 text-muted-foreground">
                 <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-medium text-foreground">Mo - Fr</p>
-                  <p>11:00 - 15:00, 17:00 - 22:00</p>
+                  <p className="font-medium text-foreground">Mo - Donn</p>
+                  <p>11:30 - 15:00, 17:00 - 22:00</p>
+                </div>
+              </li>
+                <li className="flex items-start gap-2 text-muted-foreground pl-7">
+                <div>
+                  <p className="font-medium text-foreground">Freitag</p>
+                  <p>11:00 - 15:00, 17:00 - 23:00</p>
                 </div>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground pl-7">
                 <div>
                   <p className="font-medium text-foreground">Samstag</p>
-                  <p>12:00 - 22:00</p>
+                  <p>11:30 - 15:00, 17:00 - 23:00</p>
                 </div>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground pl-7">
                 <div>
                   <p className="font-medium text-foreground">Sonntag</p>
-                  <p>12:00 - 21:00</p>
+                  <p>15:00 - 22:00</p>
                 </div>
               </li>
             </ul>

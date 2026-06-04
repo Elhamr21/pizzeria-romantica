@@ -71,8 +71,8 @@ export function CTASection() {
               variant="outline"
               className="w-full sm:w-auto text-lg px-8 py-6 bg-white/10 backdrop-blur-md border-white/30 text-white hover:bg-white/20 hover:text-white transition-all hover:scale-105"
             >
-              <a href="tel:23311276622">
-                 2331 1276622
+              <a href="tel:023311276622">
+                 02331 1276622
               </a>
             </Button>
           </motion.div>
