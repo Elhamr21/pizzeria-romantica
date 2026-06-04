@@ -103,7 +103,7 @@ export function Footer() {
                 <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium text-foreground">Mo - Donn</p>
-                  <p>11:30 - 15:00, 17:00 - 22:00</p>
+                  <p>11:00 - 15:00, 17:00 - 22:00</p>
                 </div>
               </li>
                 <li className="flex items-start gap-2 text-muted-foreground pl-7">
