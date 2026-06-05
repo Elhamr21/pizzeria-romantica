@@ -8,7 +8,7 @@ export function ContactSection() {
     { day: 'Montag - Donnerstag', hours: '11:00 - 15:00, 17:00 - 22:00' },
     {day: 'Freitag', hours: '11:00 - 15:00, 17:00 - 23:00' },
     { day: 'Samstag', hours: '11:30 - 15:00, 17:00 - 23:00' },
-    { day: 'Sonntag', hours: '15:00 - 22:00' },
+    { day: 'Sonntag & Feiertag', hours: '15:00 - 22:00' },
   ]
 
   return (

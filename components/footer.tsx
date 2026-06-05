@@ -120,7 +120,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground pl-7">
                 <div>
-                  <p className="font-medium text-foreground">Sonntag</p>
+                  <p className="font-medium text-foreground">Sonntag & Feiertag</p>
                   <p>15:00 - 22:00</p>
                 </div>
               </li>
