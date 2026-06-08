@@ -48,7 +48,7 @@ export default function ImpressumPage() {
                 <span className="font-medium text-foreground">Telefon:</span>  02331 1276622
               </p>
               <p className="text-muted-foreground">
-                <span className="font-medium text-foreground">E-Mail:</span> info@pizza-romantica-hagen.de
+                <span className="font-medium text-foreground">E-Mail:</span> info@pizzeria-romantica-haspe.de
               </p>
             </div>
           </section>

@@ -84,10 +84,10 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
                   <a
-                    href="mailto:bejta1979@gmail.com"
+                    href="mailto:info@pizzeria-romantica-haspe.de"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    bejta1979@gmail.com
+                    info@pizzeria-romantica-haspe.de
                   </a>
                 </div>
               </div>

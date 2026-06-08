@@ -123,7 +123,7 @@ export default function DatenschutzPage() {
                   58135 Hagen<br />
                   <br />
                   Telefon:  02331 1276622<br />
-                  E-Mail: info@pizza-romantica-hagen.de
+                  E-Mail: info@pizzeria-romantica-haspe.de
                 </p>
               </div>
               

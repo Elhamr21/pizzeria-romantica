@@ -37,7 +37,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="mailto:info@pizza-romantica-hagen.de"
+                href="mailto:info@pizzeria-romantica-haspe.de"
                 className="p-2 bg-muted rounded-full hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Email"
               >
